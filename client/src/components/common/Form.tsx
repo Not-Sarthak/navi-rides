@@ -55,6 +55,7 @@ const Form = ({
                             fullWidth
                             required
                             id="outlined-basic"
+                            placeholder="Car Name"
                             color="info"
                             sx={{ border: "1px solid #c2c2c2", borderRadius: "6px"}}
                             variant="outlined"
@@ -76,6 +77,7 @@ const Form = ({
                             fullWidth
                             required
                             id="outlined-basic"
+                            placeholder="Driver Name"
                             color="info"
                             sx={{ border: "1px solid #c2c2c2", borderRadius: "6px"}}
                             variant="outlined"
@@ -89,12 +91,13 @@ const Form = ({
                                 color: "#11142d",
                             }}
                         >
-                            Enter Driver Contact No.
+                            Driver Contact No.
                         </FormHelperText>
                         <TextField
                             fullWidth
                             required
                             id="outlined-basic"
+                            placeholder="(+Country-Code) Contact No."
                             color="info"
                             sx={{ border: "1px solid #c2c2c2", borderRadius: "6px"}}
                             variant="outlined"
@@ -145,11 +148,12 @@ const Form = ({
                             </FormHelperText>
                             <Select
                                 variant="outlined"
+                                placeholder="Car type"
                                 color="info"
                                 displayEmpty
                                 required
                                 inputProps={{ "aria-label": "Without label" }}
-                                defaultValue="apartment"
+                                defaultValue=""
                                 {...register("propertyType", {
                                     required: true,
                                 })}

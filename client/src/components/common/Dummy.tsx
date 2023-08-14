@@ -71,9 +71,13 @@ const Dummy = ({
             {number}
           </p>
           <p className="car">
-              <div>
-                <Call number={number}/>
-                <ReactWhatsapp number={number}/>
+              <div style={{display: "flex"}}>
+                <div style={{paddingRight: "1rem", marginTop: "3.5px"}}>
+                  <Call number={number}/>
+                </div>
+                <div>
+                  <ReactWhatsapp number={number}/>
+                </div>
               </div>
           </p>
           <p className="car">
