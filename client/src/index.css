@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+* {
+    font-family: 'Manrope', sans-serif !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  .my_profile-bg {
+    width: 340px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .my_profile_user-img {
+    border-radius: 100%;
+    margin-left: -64px;
+  }
+  
+  .property_details-img {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .my_profile-bg {
+        width: 100%;
+        border-radius: 15px;
+    }
+  
+    .my_profile_user-img {
+        margin-left: 0px;
+        margin-top: -64px;
+    }
+  
+    .property_details-img {
+        width: 100%;
+        height: auto;
+    }
+  }
+
+.log{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 28px;
+  letter-spacing: 0.6px;
+  word-spacing: 1.4px;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-family: Garamond, serif;
+  font-variant: normal;
+  text-transform: capitalize;
+}
+.log_two{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  word-spacing: 1.4px;
+  background: grey;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-family: Garamond, serif;
+  font-variant: normal;
+  text-transform: capitalize;
+}
+
+.glass{
+  background: rgba( 0, 81, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

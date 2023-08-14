@@ -1,0 +1,82 @@
+.cookie-card {
+    max-width: 320px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  }
+  
+  .title {
+    font-weight: 600;
+    color: rgb(31 41 55);
+  }
+  
+  .description {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(75 85 99);
+    border-left: 3px solid #1AA7EC;
+    padding-left: 1rem;
+    background-color: #F0F4F8;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    flex-shrink: 0;
+  }
+  .car{
+    padding-left: 1.2rem;
+    color: gray;
+  }
+  
+  .pref {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgb(31 41 55 );
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    background-color: transparent;
+  }
+  
+  .pref:hover {
+    color: rgb(156 163 175);
+  }
+  
+  .pref:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+
+  .line1{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .line2{
+    padding-top: 1rem;
+  }
+
+  .line3{
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+
+  .name{
+    padding-left: 0.8rem;
+    padding-top: 0.8rem;
+  }
+
+  .profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
