@@ -42,7 +42,9 @@ const Dummy = ({
             to={`/properties/show/${id}`}
             sx={{
                 minWidth: "275px",
-                padding: "10px",
+                paddingLeft: "10px",
+                paddingRight: "10px",
+                // padding: "10px",
                 "&:hover": {
                     boxShadow: "0 22px 45px 2px #dbdad8",
                 },

@@ -155,13 +155,13 @@ function App() {
                             edit: EditProperty,
                             icon: <DirectionsCarIcon />,
                         },
-                        {
-                            name: "agents",
-                            options: { label: "Drivers" },
-                            list: Agents,
-                            show: AgentProfile,
-                            icon: <PeopleAltOutlined />,
-                        },
+                        // {
+                        //     name: "agents",
+                        //     options: { label: "Drivers" },
+                        //     list: Agents,
+                        //     show: AgentProfile,
+                        //     icon: <PeopleAltOutlined />,
+                        // },
                         {
                             name: "reviews",
                             options: { label: "Contact Us" },
@@ -175,12 +175,6 @@ function App() {
                             icon: <InfoIcon />,
                         },
                         {
-                            name: "my-profile",
-                            options: { label: "My Profile " },
-                            list: MyProfile,
-                            icon: <AccountCircleOutlined />,
-                        },
-                        {
                             name: "terms",
                             options: { label: "Terms and Conditions" },
                             list: Terms,
@@ -191,6 +185,12 @@ function App() {
                             options: { label: "Privacy Policy" },
                             list: Privacy,
                             icon: <PrivacyTipIcon />,
+                        },
+                        {
+                            name: "my-profile",
+                            options: { label: "My Profile " },
+                            list: MyProfile,
+                            icon: <AccountCircleOutlined />,
                         },
                     ]}
                     Title={Title}

@@ -5,6 +5,8 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import { yariga, yarigatwo } from "assets";
+import Link from '@mui/material/Link';
 
 export const Header: React.FC = () => {
     const { data: user } = useGetIdentity({
@@ -17,9 +19,10 @@ export const Header: React.FC = () => {
             color="default"
             position="absolute"
             elevation={0}
-            sx={{ background: "#fcfcfc", borderRadius: "10px", width: "100%"}}
+            sx={{ background: "#384b5c", borderRadius: "10px", width: "100%"}}
         >
             <Toolbar>
+            <Link href="/" sx={{color: "white", marginLeft: "2.3rem"}}><img src={yarigatwo} alt="Yariga Logo" /></Link>
                 <Stack
                     direction="row"
                     width="100%"

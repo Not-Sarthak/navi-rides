@@ -86,7 +86,7 @@ const Home = () => {
                 <CustomButton
                     title="Add a Ride"
                     handleClick={() => navigate("/properties/create")}
-                    backgroundColor="#475be8"
+                    backgroundColor="#00c6ff"
                     color="#fcfcfc"
                     icon={<Add />}
                 />

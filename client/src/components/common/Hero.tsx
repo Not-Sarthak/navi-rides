@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <main>
     <div className="container" style={{marginTop: "2rem"}}>
-      <img src={car} alt="" style={{height:"80%", width: "100%"}}/>
+      <img src={car} alt="" style={{height:"80%", width: "96%"}}/>
       <div className="hero-text">
-        <h1>Find Your affordable and Shared rides.</h1>
+        <div className = "ex">Find Your affordable and Shared rides.</div>
         <p>
           Canada | United Kingdom | Australia
         </p>

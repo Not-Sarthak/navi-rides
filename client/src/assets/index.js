@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import yariga from './yariga.svg';
+import yarigatwo from './yarigatwo.svg';
 import bg from './bg.png';
 import about from './about.webp';
 import MainBG from './MainBG.jpg';
@@ -15,5 +16,6 @@ export {
   MainBG,
   text,
   car, 
-  whatsapp
+  whatsapp,
+  yarigatwo
 };

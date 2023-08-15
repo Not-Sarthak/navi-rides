@@ -303,7 +303,7 @@ const PropertyDetails = () => {
                         >
                             <CustomButton
                                 title={!isCurrentUser ? "Message" : "Edit"}
-                                backgroundColor="#475BE8"
+                                backgroundColor="#00bef5"
                                 color="#FCFCFC"
                                 fullWidth
                                 icon={
@@ -344,7 +344,7 @@ const PropertyDetails = () => {
                     <Box>
                         <CustomButton
                             title="Book Now"
-                            backgroundColor="#475BE8"
+                            backgroundColor="#00bef5"
                             color="#FCFCFC"
                             fullWidth
                         />

@@ -89,7 +89,7 @@ const AllProperties = () => {
                                     currentPrice === "asc" ? "↑" : "↓"
                                 }`}
                                 handleClick={() => toggleSort("price")}
-                                backgroundColor="#475be8"
+                                backgroundColor="#00c6ff"
                                 color="#fcfcfc"
                             />
                             {/* <TextField
@@ -216,7 +216,7 @@ const AllProperties = () => {
                 <CustomButton
                     title="Add a Ride"
                     handleClick={() => navigate("/properties/create")}
-                    backgroundColor="#475be8"
+                    backgroundColor="#00c6ff"
                     color="#fcfcfc"
                     icon={<Add />}
                 />
@@ -246,7 +246,7 @@ const AllProperties = () => {
                     <CustomButton
                         title="Previous"
                         handleClick={() => setCurrent((prev) => prev - 1)}
-                        backgroundColor="#475be8"
+                        backgroundColor="#00c6ff"
                         color="#fcfcfc"
                         disabled={!(current > 1)}
                     />
@@ -263,7 +263,7 @@ const AllProperties = () => {
                     <CustomButton
                         title="Next"
                         handleClick={() => setCurrent((prev) => prev + 1)}
-                        backgroundColor="#475be8"
+                        backgroundColor="#00c6ff"
                         color="#fcfcfc"
                         disabled={current === pageCount}
                     />
