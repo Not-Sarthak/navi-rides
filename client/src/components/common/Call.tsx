@@ -8,7 +8,7 @@ interface CallProps {
   
   function Call({ number }) {
     const url = `tel:${number}`;
-    return <a href={url}><CallIcon /></a>;
+    return <a href={url} ><CallIcon /></a>;
   }
   
   export default Call;

@@ -15,12 +15,12 @@ function checkImage(url: any) {
 }
 
 const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
-    <Box>
+    <Box style={{width:"98.5%"}}>
         <Typography fontSize={25} fontWeight={700} color="#11142D">
             {type} Profile
         </Typography>
 
-        <Box mt="20px" borderRadius="15px" padding="20px" bgcolor="#FCFCFC">
+        <Box mt="20px" borderRadius="15px" padding="20px" pl="0px" bgcolor="#FCFCFC">
             <Box
                 sx={{
                     display: "flex",

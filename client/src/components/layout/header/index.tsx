@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
             color="default"
             position="absolute"
             elevation={0}
-            sx={{ background: "#384b5c", borderRadius: "10px", width: "100%"}}
+            sx={{background: "#384b5c", borderRadius: "10px", width: "100%"}}
         >
             <Toolbar>
             <Link href="/" sx={{color: "white"}}><img src={yarigatwo} alt="Yariga Logo" /></Link>

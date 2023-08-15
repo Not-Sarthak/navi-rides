@@ -33,6 +33,7 @@ import {
 } from "@refinedev/core";
 
 import { Title as DefaultTitle } from "../title";
+import { New } from "pages";
 
 export const Sider: typeof DefaultSider = ({ render }) => {
     const [collapsed, setCollapsed] = useState(false);

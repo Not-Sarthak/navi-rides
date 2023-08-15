@@ -12,8 +12,8 @@ const root = createRoot(container);
 
 root.render(
     <React.StrictMode>
-        <App />
-        <Footer />
+            <App />
+            <Footer />
     </React.StrictMode>,
 );
 

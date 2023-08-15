@@ -74,7 +74,6 @@ const PropertyDetails = () => {
             );
         }
     };
-
     return (
         <Box
             borderRadius="15px"
@@ -175,13 +174,6 @@ const PropertyDetails = () => {
                                         color="#475BE8"
                                     >
                                         {propertyDetails.currency}{propertyDetails.price}
-                                    </Typography>
-                                    <Typography
-                                        fontSize={14}
-                                        color="#808191"
-                                        mb={0.5}
-                                    >
-                                        for one day
                                     </Typography>
                                 </Stack>
                             </Box>
@@ -341,14 +333,14 @@ const PropertyDetails = () => {
                         />
                     </Stack> */}
 
-                    <Box>
+                    {/* <Box>
                         <CustomButton
                             title="Book Now"
                             backgroundColor="#00bef5"
                             color="#FCFCFC"
                             fullWidth
                         />
-                    </Box>
+                    </Box> */}
                 </Box>
             </Box>
         </Box>

@@ -3,6 +3,7 @@ import { useRouterContext, TitleProps } from "@refinedev/core";
 import Button from "@mui/material/Button";
 
 import { logo, yariga } from "assets";
+import { New } from "pages";
 
 export const Title: React.FC<TitleProps> = ({ collapsed }) => {
     const { Link } = useRouterContext();

@@ -10,6 +10,7 @@ import EditProperty from "./edit-property";
 import About from "./about";
 import Contact from "./contact";
 import Terms from "./terms";
+import New from "./new";
 
 export {
     AgentProfile,
@@ -23,5 +24,6 @@ export {
     MyProfile,
     PropertyDetails,
     EditProperty,
-    Terms
+    Terms,
+    New
 };

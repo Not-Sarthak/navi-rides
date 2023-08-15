@@ -76,7 +76,7 @@ const Home = () => {
     if (isError) return <Typography>Something went wrong!</Typography>;
 
     return (
-        <Box sx={{width:"100%"}}>
+        <Box sx={{width:"98.5%"}}>
             <Stack
                 direction="row"
                 justifyContent="space-between"

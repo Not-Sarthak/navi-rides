@@ -41,7 +41,18 @@ export const validateForm = (formValues: FormValues) => {
           hasError = true;
         }
         break;
-
+      case 'currency':
+        if (!formValues.currency) {
+          errors.message = 'Currency is required';
+          hasError = true;
+        }
+        break;
+        case 'currency':
+        if (!formValues.number) {
+          errors.message = 'Contact No. is required';
+          hasError = true;
+        }
+        break;
       default:
         hasError = false;
     }

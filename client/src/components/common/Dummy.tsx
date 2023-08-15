@@ -16,6 +16,8 @@ import ReactWhatsapp from './ReactWhatsapp';
 import Call from './Call';
 
 import { AgentCardProp, InfoBarProps } from "interfaces/agent";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { whatsapp } from 'assets';
 
 function checkImage(url: any) {
   const img = new Image();
@@ -23,6 +25,7 @@ function checkImage(url: any) {
   return img.width !== 0 && img.height !== 0;
 }
 
+    
 const Dummy = ({
   id,
   title,
@@ -36,6 +39,14 @@ const Dummy = ({
   price,
   photo,
 }: PropertyCardProps) => {
+  const url = `tel:${number}`;
+  const handleClick = () => {
+    window.open(url);
+  }
+  const url_w = `https://wa.me/${number}?text=Hi`;
+  const handleClick_w = () => {
+    window.open(url_w);
+  }
   return (
     <Card
             component={Link}
@@ -75,10 +86,11 @@ const Dummy = ({
           <p className="car">
               <div style={{display: "flex"}}>
                 <div style={{paddingRight: "1rem", marginTop: "3.5px"}}>
-                  <Call number={number}/>
+                  {/* <Call number={number} /> */}
+                  <button onClick={handleClick} style={{background: "none", cursor: "pointer", color: "#40c451", border: "none"}}><CallIcon /></button>
                 </div>
                 <div>
-                  <ReactWhatsapp number={number}/>
+                  <button onClick={handleClick_w} style={{background: "none", cursor: "pointer", color: "inherit", border: "none"}}><ReactWhatsapp number={number} /></button>
                 </div>
               </div>
           </p>

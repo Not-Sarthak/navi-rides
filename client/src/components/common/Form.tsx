@@ -133,9 +133,7 @@ const Form = ({
                             {...register("description", { required: true })}
                         />
                     </FormControl>
-
-                    <Stack direction="row" gap={4}>
-                        <FormControl sx={{ flex: 1 }}>
+                    <FormControl sx={{ flex: 1 }}>
                             <FormHelperText
                                 sx={{
                                     fontWeight: 500,
@@ -166,6 +164,8 @@ const Form = ({
                                 <MenuItem value="xuv">XUV</MenuItem>
                             </Select>
                         </FormControl>
+
+                    <Stack direction="row" gap={4}>
                         <FormControl>
                         <FormHelperText
                                 sx={{
@@ -175,7 +175,7 @@ const Form = ({
                                     color: "#11142d",
                                 }}
                             >
-                                Enter Currency Type
+                                Select Currency Type
                             </FormHelperText>
                             <Select
                                 variant="outlined"

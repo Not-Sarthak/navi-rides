@@ -44,10 +44,12 @@ import {
     CreateProperty,
     AgentProfile,
     EditProperty,
-    Terms
+    Terms,
+    New
 } from "pages";
 import HomeIcon from '@mui/icons-material/Home';
 import Privacy from "pages/privacy";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -133,9 +135,13 @@ function App() {
             }
         },
     };
-
     return (
         <div>
+            <BrowserRouter>
+            <Routes>
+                <Route path="/new" element={<New />} />
+            </Routes>
+            </BrowserRouter>
             {/* <GitHubBanner /> */}
             <CssBaseline />
             <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
