@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
             sx={{ background: "#384b5c", borderRadius: "10px", width: "100%"}}
         >
             <Toolbar>
-            <Link href="/" sx={{color: "white", marginLeft: "2.3rem"}}><img src={yarigatwo} alt="Yariga Logo" /></Link>
+            <Link href="/" sx={{color: "white"}}><img src={yarigatwo} alt="Yariga Logo" /></Link>
                 <Stack
                     direction="row"
                     width="100%"
