@@ -67,10 +67,10 @@ const Dummy = ({
           To: {dropLocation}
         </p>
         <div className="line2">
-          <p className="car">
+          <p className="car" style={{paddingTop: "4px"}}>
             {title}
-            <br />
-            {number}
+            {/* <br />
+            {number} */}
           </p>
           <p className="car">
               <div style={{display: "flex"}}>
@@ -82,11 +82,8 @@ const Dummy = ({
                 </div>
               </div>
           </p>
-          <p className="car">
-            
-          </p>
         </div>
-        <hr/>
+        <hr />
         <div className="line3">
           <img src={photo} alt="img" className="profile"/>
           <p className="name">{name}</p>

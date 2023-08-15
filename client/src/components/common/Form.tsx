@@ -25,11 +25,11 @@ const Form = ({
 }: FormProps) => {
     return (
         <Box>
-            <Typography fontSize={25} fontWeight={700} color="#11142d">
-                {type} a Car Availability Listing
+            <Typography fontSize={25} fontWeight={700} color="#11142d" paddingTop={8}>
+                Add Ride Details
             </Typography>
 
-            <Box mt={2.5} borderRadius="15px" padding="20px" bgcolor="#fcfcfc">
+            <Box mt={2.5} borderRadius="15px" padding="20px" paddingTop={0} bgcolor="#fcfcfc">
                 <form
                     style={{
                         marginTop: "20px",
@@ -177,16 +177,24 @@ const Form = ({
                             >
                                 Enter Currency Type
                             </FormHelperText>
-                            <TextField
-                                fullWidth
-                                required
-                                placeholder="$"
-                                id="outlined-basic"
-                                color="info"
-                                sx={{ border: "1px solid #c2c2c2", borderRadius: "6px"}}
+                            <Select
                                 variant="outlined"
-                                {...register("currency", { required: true })}
-                            />
+                                placeholder="Car type"
+                                color="info"
+                                displayEmpty
+                                required
+                                inputProps={{ "aria-label": "Without label" }}
+                                defaultValue=""
+                                {...register("currency", {
+                                    required: true,
+                                })}
+                            >
+                                <MenuItem value="US$">USD</MenuItem>
+                                <MenuItem value="AU$">AUD</MenuItem>
+                                <MenuItem value="CA$">CAD</MenuItem>
+                                <MenuItem value="₹">INR</MenuItem>
+                                <MenuItem value="£">GBP</MenuItem>
+                            </Select>
                             <FormHelperText
                                 sx={{
                                     fontWeight: 500,

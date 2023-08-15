@@ -60,13 +60,14 @@
   }
 
   .line2{
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    line-height: 1rem;
   }
 
   .line3{
     display: flex;
     padding-left: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 
   .name{

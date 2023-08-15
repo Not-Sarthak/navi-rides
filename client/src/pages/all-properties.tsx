@@ -63,35 +63,29 @@ const AllProperties = () => {
 
     return (
         <Box>
-            <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
+            <Box mt="4rem" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
                 <Stack direction="column" width="100%">
                     <Typography fontSize={25} fontWeight={700} color="#11142d">
                         {!allProperties.length
                             ? "There are no Cars"
                             : "All Available Rides"}
                     </Typography>
-                    <Box
+                    {/* <Box
                         mb={2}
                         mt={3}
                         display="flex"
                         width="84%"
                         justifyContent="space-between"
                         flexWrap="wrap"
-                    >
+                    > */}
                         <Box
                             display="flex"
+                            justifyContent="center"
+                            alignItems="center"
                             gap={2}
                             flexWrap="wrap"
                             mb={{ xs: "20px", sm: 0 }}
                         >
-                            <CustomButton
-                                title={`Sort By price ${
-                                    currentPrice === "asc" ? "↑" : "↓"
-                                }`}
-                                handleClick={() => toggleSort("price")}
-                                backgroundColor="#00c6ff"
-                                color="#fcfcfc"
-                            />
                             {/* <TextField
                                 variant="outlined"
                                 color="info"
@@ -164,7 +158,7 @@ const AllProperties = () => {
                                     ]);
                                 }}
                             />
-                            <Select
+                            {/* <Select
                                 variant="outlined"
                                 color="info"
                                 displayEmpty
@@ -202,9 +196,9 @@ const AllProperties = () => {
                                         {type}
                                     </MenuItem>
                                 ))}
-                            </Select>
+                            </Select> */}
                         </Box>
-                    </Box>
+                    {/* </Box> */}
                 </Stack>
             </Box>
 
@@ -219,6 +213,14 @@ const AllProperties = () => {
                     backgroundColor="#00c6ff"
                     color="#fcfcfc"
                     icon={<Add />}
+                />
+                <CustomButton
+                    title={`Sort By price ${
+                    currentPrice === "asc" ? "↑" : "↓"
+                    }`}
+                    handleClick={() => toggleSort("price")}
+                    backgroundColor="#00c6ff"
+                    color="#fcfcfc"
                 />
             </Stack>
 

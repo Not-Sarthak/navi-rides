@@ -6,7 +6,7 @@ import {car} from '../../assets'
 const Hero = () => {
   return (
     <main>
-    <div className="container" style={{marginTop: "2rem"}}>
+    <div className="container" style={{marginTop: "0rem"}}>
       <img src={car} alt="" style={{height:"80%", width: "96%"}}/>
       <div className="hero-text">
         <div className = "ex">Find Your affordable and Shared rides.</div>

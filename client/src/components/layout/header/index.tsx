@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
                                 <Avatar src={user?.avatar} alt={user?.name} />
                             )}
                             {user.name && (
-                                <Typography variant="subtitle2">
+                                <Typography variant="subtitle2" sx={{color: "#fcfcfc"}}>
                                     {user?.name}
                                 </Typography>
                             )}
