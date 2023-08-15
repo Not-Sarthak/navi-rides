@@ -67,7 +67,7 @@ const GoogleButton = (): JSX.Element => {
 
   return (
     <React.Fragment>
-      <AppBar sx={{ background: "#063970", borderRadius: "10px", width: "100%"}}>
+      <AppBar sx={{ position: 'absolute', background: "#586ae9", borderRadius: "10px", width: "100%"}}>
         <Toolbar>
           <Link href="/" sx={{color: "white"}}><img src={yariga} alt="Yariga Logo" /></Link>
           {isMatch ? (

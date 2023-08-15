@@ -263,7 +263,7 @@ const PropertyDetails = () => {
                                     fontWeight={400}
                                     color="#808191"
                                 >
-                                    Agent
+                                    Driver
                                 </Typography>
                             </Box>
 

@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import { useMediaQuery } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import Hero from "../components/common/Hero";
 // import {
 //     PieChart,
 //     PropertyReferrals,
@@ -75,50 +76,12 @@ const Home = () => {
     if (isError) return <Typography>Something went wrong!</Typography>;
 
     return (
-        <Box>
-            {/* <Typography fontSize={25} fontWeight={700} color="#11142D">
-                Dashboard
-            </Typography>
-            <Box mt="20px" display="flex" flexWrap="wrap" gap={4}>
-                <PieChart
-                    title="Present Available Cars"
-                    value={684}
-                    series={[75, 25]}
-                    colors={["#275be8", "#c4e8ef"]}
-                />
-                <PieChart
-                    title="Present Active Agents"
-                    value={550}
-                    series={[60, 40]}
-                    colors={["#275be8", "#c4e8ef"]}
-                />
-                <PieChart
-                    title="Total Customers"
-                    value={2840}
-                    series={[75, 25]}
-                    colors={["#275be8", "#c4e8ef"]}
-                />
-                <PieChart
-                    title="Available Cities"
-                    value={555}
-                    series={[75, 25]}
-                    colors={["#275be8", "#c4e8ef"]}
-                />
-            </Box>
-
-            <Stack
-                mt="25px"
-                width="100%"
-                direction={{ xs: "column", lg: "row" }}
-                gap={4}
-            >
-                <TotalRevenue />
-                <PropertyReferrals />
-            </Stack> */}
+        <Box sx={{width:"100%"}}>
             <Stack
                 direction="row"
                 justifyContent="space-between"
                 alignItems="center"
+                mt={10}
             >
                 <CustomButton
                     title="Add a Ride"
@@ -128,10 +91,13 @@ const Home = () => {
                     icon={<Add />}
                 />
             </Stack>
+            <Box mt={-12}>
+                <Hero />
+            </Box>
             <Box
-                flex={1}
+                // flex={1}
                 borderRadius="15px"
-                padding="20px"
+                // padding="20px"
                 bgcolor="#fcfcfc"
                 display="flex"
                 flexDirection="column"
@@ -141,12 +107,13 @@ const Home = () => {
                 {/* <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", zIndex: "3", top: 0, left: 0, right: 0 }}>
                     <img src={MainBG} style={{ width: "50%", height: "50%", borderRadius: "10px" }} />
                 </Box> */}
-                <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+                <Box style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
                 <TextField
+                    className="glass"
                     variant="outlined"
                     color="info"
                     placeholder="Pickup Location"
-                    sx={{ width: "300px", border: "1px solid #a8a8a8", borderRadius: "6px" }}
+                    sx={{ width: "300px", border: "1px solid #a8a8a8", borderRadius: "6px", marginBottom: "1rem", marginTop: "0rem"  }}
                     value={currentFilterValues.location}
                     onChange={(e) => {
                         setFilters([
@@ -161,10 +128,11 @@ const Home = () => {
                     }}
                 />
                 <TextField
+                    className="glass"
                     variant="outlined"
                     color="info"
                     placeholder="Drop Location"
-                    sx={{ width: "300px", border: "1px solid #a8a8a8", borderRadius: "6px" }}
+                    sx={{ width: "300px", border: "1px solid #a8a8a8", borderRadius: "6px",  marginBottom: "1rem" }}
                     value={currentFilterValues.dropLocation}
                     onChange={(e) => {
                         setFilters([
@@ -179,10 +147,11 @@ const Home = () => {
                     }}
                 />
                 <TextField
+                    className="glass"
                     variant="outlined"
                     color="info"
                     placeholder="Search by Date"
-                    sx={{ width: "300px", border: "1px solid #a8a8a8", borderRadius: "6px" }}
+                    sx={{ width: "300px", border: "1px solid #a8a8a8", borderRadius: "6px",  marginBottom: "1rem" }}
                     value={currentFilterValues.date}
                     onChange={(e) => {
                         setFilters([
@@ -196,9 +165,9 @@ const Home = () => {
                         ]);
                     }}
                 />
-                </div>
+                </Box>
                 <br />
-                <Typography fontSize="18px" fontWeight={600} color="#11142d">
+                <Typography fontSize="18px" fontWeight={600} color="#11142d" style={{display: "flex"}}>
                     Latest Rides
                 </Typography>
 

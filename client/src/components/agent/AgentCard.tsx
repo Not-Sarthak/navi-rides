@@ -58,6 +58,8 @@ const AgentCard = ({
                 flexDirection: { xs: "column", sm: "row" },
                 gap: "20px",
                 padding: "20px",
+                border: "1px solid #e0e0e0",
+                borderRadius: "10px",
                 "&:hover": {
                     boxShadow: "0 22px 45px 2px rgba(176,176,176,0.1)",
                 },
@@ -90,7 +92,7 @@ const AgentCard = ({
                         {name}
                     </Typography>
                     <Typography fontSize={14} color="#808191">
-                        Car Agent
+                        Driver
                     </Typography>
                 </Stack>
                 <Stack

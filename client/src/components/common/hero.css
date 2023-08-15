@@ -12,11 +12,11 @@
   
   .container img {
     width: 100%;
-    height: 500px;
+    height: 100%;
   }
   
   .hero-text {
-    width: 80%;
+    width: 90%;
   }
   
   .hero-text h1 {

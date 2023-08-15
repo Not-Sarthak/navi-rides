@@ -1,3 +1,7 @@
+import React from 'react'
+import "./Dummy.css"
+
+import { PropertyCardProps } from "interfaces/property";
 import Place from "@mui/icons-material/Place";
 import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
@@ -6,14 +10,27 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Stack from "@mui/material/Stack";
+import CallIcon from '@mui/icons-material/Call';
 
-import { PropertyCardProps } from "interfaces/property";
+import ReactWhatsapp from './ReactWhatsapp';
+import Call from './Call';
+
+import { AgentCardProp, InfoBarProps } from "interfaces/agent";
+
+function checkImage(url: any) {
+  const img = new Image();
+  img.src = url;
+  return img.width !== 0 && img.height !== 0;
+}
 
 const PropertyCard = ({
     id,
     title,
-    location,
+    name,
+    date,
+    time,
     number,
+    location,
     dropLocation,
     currency,
     price,
@@ -24,66 +41,57 @@ const PropertyCard = ({
             component={Link}
             to={`/properties/show/${id}`}
             sx={{
-                backgroundColor:"#dadefa",
-                maxWidth: "330px",
+                minWidth: "275px",
                 padding: "10px",
                 "&:hover": {
                     boxShadow: "0 22px 45px 2px #dbdad8",
                 },
                 cursor: "pointer",
-                width: "100%",
+                borderRadius: "10px",
             }}
             elevation={0}
         >
-            <CardMedia
-                component="img"
-                width="100%"
-                height={210}
-                image={photo}
-                alt="card image"
-                sx={{ borderRadius: "10px" }}
-            />
-            <CardContent
-                sx={{
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: "space-between",
-                    gap: "10px",
-                    paddingX: "5px",
-                }}
-            >
-                <Stack direction="column" gap={1}>
-                    <Typography fontSize={16} fontWeight={500} color="#11142d">
-                        {title}
-                    </Typography>
-                    <Stack direction="row" gap={0.5} alignItems="flex-start">
-                        <Place
-                            sx={{
-                                fontSize: 18,
-                                color: "#11142d",
-                                marginTop: 0.25,
-                            }}
-                        />
-                        <Typography fontSize={14} color="#808191">
-                            {location} to {dropLocation}
-                            <br/>
-                            {number}
-                        </Typography>
-                    </Stack>
-                </Stack>
-                <Box
-                    px={1.5}
-                    py={0.5}
-                    borderRadius={1}
-                    bgcolor="#dadefa"
-                    height="fit-content"
-                >
-                    <Typography fontSize={14} fontWeight={600} color="#475be8">
-                        {currency} {price}
-                    </Typography>
-                </Box>
-            </CardContent>
-        </Card>
+           <CardContent>
+      <Box className="cookie-card" style={{border: "1px solid black", width: "24rem"}}>
+        <div className="line1">
+          <span className="title">{date} | {time}</span>
+          <div className="sub-line1">
+            <span className="price" style={{paddingLeft: "1rem", color: "#55ee2e", fontWeight:"bold"}}>{currency} {price}</span>
+          </div>
+        </div>
+        <p className="description">
+          From: {location}
+          <br/>
+          To: {dropLocation}
+        </p>
+        <div className="line2">
+          <p className="car">
+            {title}
+            <br />
+            {number}
+          </p>
+          <p className="car">
+              <div style={{display: "flex"}}>
+                <div style={{paddingRight: "1rem", marginTop: "3.5px"}}>
+                  <Call number={number}/>
+                </div>
+                <div>
+                  <ReactWhatsapp number={number}/>
+                </div>
+              </div>
+          </p>
+          <p className="car">
+            
+          </p>
+        </div>
+        <hr/>
+        <div className="line3">
+          <img src={photo} alt="img" className="profile"/>
+          <p className="name">{name}</p>
+        </div>
+        </Box>
+        </CardContent>
+    </Card>
     );
 };
 

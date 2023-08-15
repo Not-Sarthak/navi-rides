@@ -52,7 +52,7 @@ const Dummy = ({
             elevation={0}
         >
            <CardContent>
-      <Box className="cookie-card" style={{border: "1px solid black", width: "20rem"}}>
+      <Box className="cookie-card" style={{border: "1px solid black", width: "24rem"}}>
         <div className="line1">
           <span className="title">{date} | {time}</span>
           <div className="sub-line1">

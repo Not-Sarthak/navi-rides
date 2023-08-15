@@ -15,9 +15,9 @@ export const Header: React.FC = () => {
     return (
         <AppBar
             color="default"
-            position="sticky"
+            position="absolute"
             elevation={0}
-            sx={{ background: "#fcfcfc" }}
+            sx={{ background: "#fcfcfc", borderRadius: "10px", width: "100%"}}
         >
             <Toolbar>
                 <Stack

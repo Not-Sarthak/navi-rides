@@ -129,7 +129,7 @@ export const Login: React.FC = () => {
             <Navbar />
             <Hero />
         </Box>
-        <Box  mt={10} component="div">
+        <Box  component="div">
             <Box style={{display: "flex", flexDirection: "column", flexWrap: "wrap", justifyContent: "center", alignContent: "center"}}>
                 <TextField
                     className="glass" 

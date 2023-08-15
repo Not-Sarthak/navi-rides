@@ -76,7 +76,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                                     {name}
                                 </Typography>
                                 <Typography fontSize={16} color="#808191">
-                                   Car Agent
+                                   Driver
                                 </Typography>
                             </Stack>
 
