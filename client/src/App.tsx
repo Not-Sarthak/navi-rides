@@ -20,6 +20,8 @@ import StarOutlineRounded from "@mui/icons-material/StarOutlineRounded";
 import VillaOutlined from "@mui/icons-material/VillaOutlined";
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import InfoIcon from '@mui/icons-material/Info';
+import FeedIcon from '@mui/icons-material/Feed';
+import PrivacyTipIcon from '@mui/icons-material/PrivacyTip';
 
 import dataProvider from "@refinedev/simple-rest";
 import routerProvider from "@refinedev/react-router-v6/legacy";
@@ -45,6 +47,7 @@ import {
     Terms
 } from "pages";
 import HomeIcon from '@mui/icons-material/Home';
+import Privacy from "pages/privacy";
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -176,6 +179,18 @@ function App() {
                             options: { label: "My Profile " },
                             list: MyProfile,
                             icon: <AccountCircleOutlined />,
+                        },
+                        {
+                            name: "terms",
+                            options: { label: "Terms and Conditions" },
+                            list: Terms,
+                            icon: <FeedIcon />,
+                        },
+                        {
+                            name: "privacy",
+                            options: { label: "Privacy Policy" },
+                            list: Privacy,
+                            icon: <PrivacyTipIcon />,
                         },
                     ]}
                     Title={Title}

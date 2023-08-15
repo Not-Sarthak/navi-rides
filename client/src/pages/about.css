@@ -9,7 +9,7 @@
   }
   .heading {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 13%;
   }
   .heading h1 {
     font-size: 50px;
@@ -64,7 +64,7 @@
   .Btn {
     width: 9em;
     height: 3em;
-    border-radius: 30em;
+    /* border-radius: 30em; */
     font-size: 15px;
     font-family: inherit;
     border: none;
@@ -80,7 +80,7 @@
     content: '';
     width: 0;
     height: 3em;
-    border-radius: 30em;
+    /* border-radius: 30em; */
     position: absolute;
     top: 0;
     left: 0;

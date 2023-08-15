@@ -1,8 +1,8 @@
 import React from 'react'
 
-const terms = () => {
+const Terms = () => {
   return (
-    <div>
+    <div style={{marginTop: "12%"}}>
         <div>
             <h1>
                 1. Terms
@@ -49,4 +49,4 @@ const terms = () => {
   )
 }
 
-export default terms
+export default Terms
