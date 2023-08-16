@@ -25,6 +25,7 @@ export interface PropertyProps {
     number: string;
     date: string;
     time: string;
+    min: string;
     location: string;
     dropLocation: string;
     currency: string;

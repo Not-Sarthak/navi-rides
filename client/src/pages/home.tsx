@@ -182,6 +182,7 @@ const Home = () => {
                         title={property.title}
                         name={property.name}
                         time={property.time}
+                        min={property.min}
                         number={property.number}
                         date={property.date}
                         location={property.location}

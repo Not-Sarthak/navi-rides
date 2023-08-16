@@ -189,6 +189,7 @@ const Profile = ({ type, name, avatar, email, properties }: ProfileProps) => (
                             number={property.number}
                             name={property.name}
                             time={property.time}
+                            min={property.min}
                             date={property.date}
                             location={property.location}
                             dropLocation={property.dropLocation}

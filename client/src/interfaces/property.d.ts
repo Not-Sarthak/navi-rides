@@ -23,6 +23,7 @@ export interface PropertyCardProps {
     title: string;
     name: string;
     time: string;
+    min: string;
     date: string;
     number: string;
     location: string;

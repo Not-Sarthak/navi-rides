@@ -137,11 +137,11 @@ function App() {
     };
     return (
         <div>
-            <BrowserRouter>
+            {/* <BrowserRouter>
             <Routes>
                 <Route path="/new" element={<New />} />
             </Routes>
-            </BrowserRouter>
+            </BrowserRouter> */}
             {/* <GitHubBanner /> */}
             <CssBaseline />
             <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />

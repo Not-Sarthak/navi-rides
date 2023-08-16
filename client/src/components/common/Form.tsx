@@ -97,7 +97,7 @@ const Form = ({
                             fullWidth
                             required
                             id="outlined-basic"
-                            placeholder="(+Country-Code) Contact No."
+                            placeholder="(Country-Code) Contact No."
                             color="info"
                             sx={{ border: "1px solid #c2c2c2", borderRadius: "6px"}}
                             variant="outlined"
@@ -286,18 +286,120 @@ const Form = ({
                                 color: "#11142d",
                             }}
                         >
-                            Enter Time
+                            Select Time
                         </FormHelperText>
-                        <TextField
-                            fullWidth
-                            required
-                            placeholder="Hrs: Mins: Secs"
-                            id="outlined-basic"
-                            color="info"
-                            sx={{ border: "1px solid #c2c2c2", borderRadius: "6px", width: "50%"}}
-                            variant="outlined"
-                            {...register("time", { required: true })}
-                        />
+                        <Select
+                                variant="outlined"
+                                placeholder="Hrs"
+                                color="info"
+                                sx={{ border: "1px solid #c2c2c2", borderRadius: "6px", width: "50%"}}
+                                displayEmpty
+                                required
+                                inputProps={{ "aria-label": "Without label" }}
+                                defaultValue=""
+                                {...register("time", {
+                                    required: true,
+                                })}
+                            >
+                                <MenuItem value="1">1</MenuItem>
+                                <MenuItem value="2">2</MenuItem>
+                                <MenuItem value="3">3</MenuItem>
+                                <MenuItem value="4">4</MenuItem>
+                                <MenuItem value="5">5</MenuItem>
+                                <MenuItem value="1">6</MenuItem>
+                                <MenuItem value="2">7</MenuItem>
+                                <MenuItem value="3">8</MenuItem>
+                                <MenuItem value="4">9</MenuItem>
+                                <MenuItem value="5">10</MenuItem>
+                                <MenuItem value="1">11</MenuItem>
+                                <MenuItem value="2">12</MenuItem>
+                                <MenuItem value="3">13</MenuItem>
+                                <MenuItem value="4">14</MenuItem>
+                                <MenuItem value="5">15</MenuItem>
+                                <MenuItem value="1">16</MenuItem>
+                                <MenuItem value="2">17</MenuItem>
+                                <MenuItem value="3">18</MenuItem>
+                                <MenuItem value="4">19</MenuItem>
+                                <MenuItem value="5">20</MenuItem>
+                                <MenuItem value="1">21</MenuItem>
+                                <MenuItem value="2">22</MenuItem>
+                                <MenuItem value="3">23</MenuItem>
+                                <MenuItem value="4">24</MenuItem>
+                            </Select>
+                            <Select
+                                variant="outlined"
+                                placeholder="Mins"
+                                color="info"
+                                sx={{ border: "1px solid #c2c2c2", borderRadius: "6px", width: "50%"}}
+                                displayEmpty
+                                required
+                                inputProps={{ "aria-label": "Without label" }}
+                                defaultValue=""
+                                {...register("min", {
+                                    required: true,
+                                })}
+                            >
+                                <MenuItem value="0">0</MenuItem>
+                                <MenuItem value="1">1</MenuItem>
+                                <MenuItem value="2">2</MenuItem>
+                                <MenuItem value="3">3</MenuItem>
+                                <MenuItem value="4">4</MenuItem>
+                                <MenuItem value="5">5</MenuItem>
+                                <MenuItem value="6">6</MenuItem>
+                                <MenuItem value="7">7</MenuItem>
+                                <MenuItem value="8">8</MenuItem>
+                                <MenuItem value="9">9</MenuItem>
+                                <MenuItem value="10">10</MenuItem>
+                                <MenuItem value="11">11</MenuItem>
+                                <MenuItem value="12">12</MenuItem>
+                                <MenuItem value="13">13</MenuItem>
+                                <MenuItem value="14">14</MenuItem>
+                                <MenuItem value="15">15</MenuItem>
+                                <MenuItem value="16">16</MenuItem>
+                                <MenuItem value="17">17</MenuItem>
+                                <MenuItem value="18">18</MenuItem>
+                                <MenuItem value="19">19</MenuItem>
+                                <MenuItem value="20">20</MenuItem>
+                                <MenuItem value="21">21</MenuItem>
+                                <MenuItem value="22">22</MenuItem>
+                                <MenuItem value="23">23</MenuItem>
+                                <MenuItem value="24">24</MenuItem>
+                                <MenuItem value="25">25</MenuItem>
+                                <MenuItem value="26">26</MenuItem>
+                                <MenuItem value="27">27</MenuItem>
+                                <MenuItem value="28">28</MenuItem>
+                                <MenuItem value="29">29</MenuItem>
+                                <MenuItem value="30">30</MenuItem>
+                                <MenuItem value="31">31</MenuItem>
+                                <MenuItem value="32">32</MenuItem>
+                                <MenuItem value="33">33</MenuItem>
+                                <MenuItem value="34">34</MenuItem>
+                                <MenuItem value="35">35</MenuItem>
+                                <MenuItem value="36">36</MenuItem>
+                                <MenuItem value="37">37</MenuItem>
+                                <MenuItem value="38">38</MenuItem>
+                                <MenuItem value="39">39</MenuItem>
+                                <MenuItem value="40">40</MenuItem>
+                                <MenuItem value="41">41</MenuItem>
+                                <MenuItem value="42">42</MenuItem>
+                                <MenuItem value="43">43</MenuItem>
+                                <MenuItem value="44">44</MenuItem>
+                                <MenuItem value="45">45</MenuItem>
+                                <MenuItem value="46">46</MenuItem>
+                                <MenuItem value="47">47</MenuItem>
+                                <MenuItem value="48">48</MenuItem>
+                                <MenuItem value="49">49</MenuItem>
+                                <MenuItem value="50">50</MenuItem>
+                                <MenuItem value="51">51</MenuItem>
+                                <MenuItem value="52">52</MenuItem>
+                                <MenuItem value="53">53</MenuItem>
+                                <MenuItem value="54">54</MenuItem>
+                                <MenuItem value="55">55</MenuItem>
+                                <MenuItem value="56">56</MenuItem>
+                                <MenuItem value="57">57</MenuItem>
+                                <MenuItem value="58">58</MenuItem>
+                                <MenuItem value="59">59</MenuItem>
+                            </Select>
                         </Box>
                     </FormControl>
 

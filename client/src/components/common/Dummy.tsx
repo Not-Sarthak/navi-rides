@@ -18,6 +18,7 @@ import Call from './Call';
 import { AgentCardProp, InfoBarProps } from "interfaces/agent";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { whatsapp } from 'assets';
+import { minTime } from 'date-fns/fp';
 
 function checkImage(url: any) {
   const img = new Image();
@@ -32,6 +33,7 @@ const Dummy = ({
   name,
   date,
   time,
+  min,
   number,
   location,
   dropLocation,
@@ -67,7 +69,7 @@ const Dummy = ({
            <CardContent>
       <Box className="cookie-card" style={{border: "1px solid black", width: "24rem"}}>
         <div className="line1">
-          <span className="title">{date} | {time}</span>
+          <span className="title">{date} | {time}:{min}</span>
           <div className="sub-line1">
             <span className="price" style={{paddingLeft: "1rem", color: "#55ee2e", fontWeight:"bold"}}>{currency} {price}</span>
           </div>

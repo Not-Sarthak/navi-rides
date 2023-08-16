@@ -29,6 +29,7 @@ const PropertyCard = ({
     name,
     date,
     time,
+    min,
     number,
     location,
     dropLocation,

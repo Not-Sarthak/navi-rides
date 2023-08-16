@@ -203,6 +203,7 @@ export const Login: React.FC = () => {
                          key={property._id}
                          id={property._id}
                          time={property.time}
+                         min={property.min}
                          name={property.name}
                          number={property.number}
                          title={property.title}

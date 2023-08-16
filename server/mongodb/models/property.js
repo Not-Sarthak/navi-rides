@@ -11,6 +11,7 @@ const PropertySchema = new mongoose.Schema({
     currency: { type: String, required: true },
     price: { type: String, required: true },
     time: { type: String, required: true },
+    min: { type: String, required: true },
     number: { type: Number, required: true },
     photo: { type: String, required: true },
     creator: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
