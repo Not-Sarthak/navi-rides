@@ -294,12 +294,14 @@ const PropertyDetails = () => {
                             gap={2}
                         >
                             <CustomButton
-                                title={!isCurrentUser ? "Message" : "Edit"}
-                                backgroundColor="#00bef5"
+                                title={!isCurrentUser ? "" : "Edit"}
+                                backgroundColor={
+                                    !isCurrentUser ? "" : "#00bef5"
+                                }
                                 color="#FCFCFC"
                                 fullWidth
                                 icon={
-                                    !isCurrentUser ? <ChatBubble /> : <Edit />
+                                    !isCurrentUser ? "" : <Edit />
                                 }
                                 handleClick={() => {
                                     if (isCurrentUser) {
@@ -310,13 +312,13 @@ const PropertyDetails = () => {
                                 }}
                             />
                             <CustomButton
-                                title={!isCurrentUser ? "Call" : "Delete"}
+                                title={!isCurrentUser ? "" : "Delete"}
                                 backgroundColor={
-                                    !isCurrentUser ? "#2ED480" : "#d42e2e"
+                                    !isCurrentUser ? "" : "#d42e2e"
                                 }
                                 color="#FCFCFC"
                                 fullWidth
-                                icon={!isCurrentUser ? <Phone /> : <Delete />}
+                                icon={!isCurrentUser ? "" : <Delete />}
                                 handleClick={() => {
                                     if (isCurrentUser) handleDeleteProperty();
                                 }}
