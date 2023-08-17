@@ -72,7 +72,7 @@ function App() {
 
             if (profileObj) {
                 const response = await fetch(
-                    "https://navi-rides.onrender.com/api/v1/users",
+                    "https://navirides72.onrender.com/api/v1/users",
                     {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
@@ -147,7 +147,7 @@ function App() {
             <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
             <RefineSnackbarProvider>
                 <Refine
-                    dataProvider={dataProvider("https://navi-rides.onrender.com/api/v1")}
+                    dataProvider={dataProvider("https://navirides72.onrender.com/api/v1")}
                     notificationProvider={notificationProvider}
                     ReadyPage={ReadyPage}
                     catchAll={<ErrorComponent />}
