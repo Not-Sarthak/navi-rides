@@ -55,6 +55,9 @@ const PropertyDetails = () => {
 
     const isCurrentUser = user.email === propertyDetails.creator.email;
 
+    const nope = `/properties/show/${id}`
+    const c = window.location.origin + `/properties/show/${id}`
+
     const handleDeleteProperty = () => {
         // eslint-disable-next-line no-restricted-globals
         const response = confirm(
@@ -81,7 +84,7 @@ const PropertyDetails = () => {
             bgcolor="#FCFCFC"
             width="fit-content"
         >
-            <Typography fontSize={25} fontWeight={700} color="#11142D">
+            <Typography mt={7} fontSize={25} fontWeight={700} color="#11142D" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
                 Details
             </Typography>
 
@@ -95,12 +98,12 @@ const PropertyDetails = () => {
                     <img
                         src={propertyDetails.photo}
                         alt="property_details-img"
-                        height={546}
+                        height={300}
                         style={{ objectFit: "cover", borderRadius: "10px" }}
                         className="property_details-img"
                     />
 
-                    <Box mt="15px" style={{border: "1px solid #e4e4e4", padding: "30px", borderRadius: "10px"}}>
+                    <Box mt="15px" style={{border: "1px solid #e4e4e4", padding: "30px", borderRadius: "10px"}} sx={{boxShadow: "-1px 15px 30px -12px #a8a8a8"}}>
                         <Stack
                             direction="row"
                             justifyContent="space-between"
@@ -108,21 +111,32 @@ const PropertyDetails = () => {
                             alignItems="center"
                         >
                             <Typography
-                                fontSize={18}
-                                fontWeight={500}
+                                fontSize={16}
+                                fontWeight={600}
+                                // mt="5px"
                                 color="#11142D"
                                 textTransform="capitalize"
                             >
-                                {propertyDetails.propertyType}
+                                {propertyDetails.title} ({propertyDetails.propertyType})
                             </Typography>
-                            <Box>
+                            <Box sx={{display: "flex", justifyContent: "center", alignContent: "center", border: "1px solid #e4e4e4", padding: "2px", borderRadius: "13px"}}>
+                            <Typography
+                                    fontSize={16}
+                                    fontWeight={400}
+                                    // mt="5px"
+                                    color="#11142D"
+                                >
+                                    Price: {propertyDetails.currency}{propertyDetails.price}
+                                </Typography>
+                                </Box>
+                            {/* <Box>
                                 {[1, 2, 3, 4, 5].map((item) => (
                                     <Star
                                         key={`star-${item}`}
                                         sx={{ color: "#F2C94C" }}
                                     />
                                 ))}
-                            </Box>
+                            </Box> */}
                         </Stack>
 
                         <Stack
@@ -133,70 +147,81 @@ const PropertyDetails = () => {
                             gap={2}
                         >
                             <Box>
-                                <Typography
-                                    fontSize={22}
-                                    fontWeight={600}
-                                    mt="10px"
+                                {/* <Typography
+                                    fontSize={18}
+                                    fontWeight={500}
                                     color="#11142D"
+                                    textTransform="capitalize"
                                 >
-                                    {propertyDetails.title}
-                                </Typography>
+                                    
+                                </Typography> */}
                                 <Stack
                                     mt={0.5}
                                     direction="row"
                                     alignItems="center"
                                     gap={0.5}
                                 >
-                                    <Place sx={{ color: "#808191" }} />
+                                    <Place sx={{ color: "#808191", fontSize: "medium", marginLeft: "-2px" }} />
                                     <Typography fontSize={14} color="#808191">
                                         {propertyDetails.location} to {propertyDetails.dropLocation}
                                     </Typography>
                                 </Stack>
                             </Box>
 
-                            <Box>
-                                <Typography
+                            {/* <Box sx={{display: "flex", justifyContent: "center", alignContent: "center", border: "1px solid #e4e4e4", padding: "2px", borderRadius: "13px"}}> */}
+                                {/* <Typography
                                     fontSize={16}
-                                    fontWeight={600}
-                                    mt="10px"
+                                    fontWeight={400}
+                                    // mt="5px"
                                     color="#11142D"
                                 >
-                                    Price
-                                </Typography>
-                                <Stack
+                                    Price: {propertyDetails.currency}{propertyDetails.price}
+                                </Typography> */}
+                                {/* <Stack
                                     direction="row"
                                     alignItems="flex-end"
                                     gap={1}
                                 >
                                     <Typography
-                                        fontSize={25}
-                                        fontWeight={700}
-                                        color="#475BE8"
+                                        fontSize={16}
+                                        fontWeight={600}
+                                        // mt="5px"
+                                        color="#11142D"
                                     >
                                         {propertyDetails.currency}{propertyDetails.price}
                                     </Typography>
-                                </Stack>
-                            </Box>
+                                </Stack> */}
+                            {/* </Box> */}
                         </Stack>
 
-                        <Stack mt="25px" direction="column" gap="10px">
-                            <Typography fontSize={18} color="#11142D">
+                        <Stack mt="15px" direction="column" gap="10px">
+                            <Typography  
+                                fontSize={16}
+                                fontWeight={600}
+                                // mt="5px"
+                                color="#11142D"
+                                textTransform="capitalize">
                                 Description
                             </Typography>
                             <Typography fontSize={14} color="#808191">
                                 {propertyDetails.description}
                             </Typography>
-                            <Typography fontSize={18} color="#11142D">
+                            <Typography 
+                                fontSize={16}
+                                fontWeight={600}
+                                // mt="5px"
+                                color="#11142D"
+                                textTransform="capitalize">
                                 Share
                             </Typography>
                             <Typography fontSize={14} color="#808191" style={{}}>
-                                <FacebookShareButton url={"https://www.facebook.com/"} style={{paddingRight:"1rem"}}>
+                                <FacebookShareButton url={c} style={{paddingRight:"1rem"}}>
                                     <FacebookIcon size={32} round={true} />
                                 </FacebookShareButton>
-                                <TwitterShareButton url={"https://twitter.com/0xSarthak13"} style={{paddingRight:"1rem"}}>
+                                <TwitterShareButton url={c} style={{paddingRight:"1rem"}}>
                                     <TwitterIcon size={32} round={true} />
                                 </TwitterShareButton>
-                                <WhatsappShareButton url={"https://www.instagram.com/navirides/"}>
+                                <WhatsappShareButton url={c}>
                                     <WhatsappIcon size={32} round={true} />
                                 </WhatsappShareButton>
                             </Typography>
@@ -210,6 +235,7 @@ const PropertyDetails = () => {
                     display="flex"
                     flexDirection="column"
                     gap="20px"
+                    sx={{boxShadow: "-1px 15px 30px -12px #a8a8a8"}}
                 >
                     <Stack
                         width="100%"
@@ -257,15 +283,23 @@ const PropertyDetails = () => {
                                 >
                                     Driver
                                 </Typography>
+                                <Typography
+                                    mt="5px"
+                                    fontSize={14}
+                                    fontWeight={400}
+                                    color="#808191"
+                                >
+                                    {propertyDetails.number}
+                                </Typography>
                             </Box>
 
-                            <Stack
+                            {/* <Stack
                                 mt="15px"
                                 direction="row"
                                 alignItems="center"
                                 gap={1}
                             >
-                                <Place sx={{ color: "#808191" }} />
+                                <Place sx={{ color: "#808191" }} /> */}
                                 {/* <Typography
                                     fontSize={14}
                                     fontWeight={400}
@@ -273,9 +307,9 @@ const PropertyDetails = () => {
                                 >
                                     North Carolina, USA
                                 </Typography> */}
-                            </Stack>
+                            {/* </Stack> */}
 
-                            <Typography
+                            {/* <Typography
                                 mt={1}
                                 fontSize={16}
                                 fontWeight={600}
@@ -283,7 +317,7 @@ const PropertyDetails = () => {
                             >
                                 {propertyDetails.creator.allProperties.length}{" "}
                                 Cars
-                            </Typography>
+                            </Typography> */}
                         </Stack>
 
                         <Stack

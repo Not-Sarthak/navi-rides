@@ -25,7 +25,7 @@ const Form = ({
 }: FormProps) => {
     return (
         <Box>
-            <Typography fontSize={25} fontWeight={700} color="#11142d" paddingTop={8}>
+            <Typography fontSize={25} fontWeight={700} color="#11142d" paddingTop={8} sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
                 Add Ride Details
             </Typography>
 
@@ -306,25 +306,25 @@ const Form = ({
                                 <MenuItem value="3">3</MenuItem>
                                 <MenuItem value="4">4</MenuItem>
                                 <MenuItem value="5">5</MenuItem>
-                                <MenuItem value="1">6</MenuItem>
-                                <MenuItem value="2">7</MenuItem>
-                                <MenuItem value="3">8</MenuItem>
-                                <MenuItem value="4">9</MenuItem>
-                                <MenuItem value="5">10</MenuItem>
-                                <MenuItem value="1">11</MenuItem>
-                                <MenuItem value="2">12</MenuItem>
-                                <MenuItem value="3">13</MenuItem>
-                                <MenuItem value="4">14</MenuItem>
-                                <MenuItem value="5">15</MenuItem>
-                                <MenuItem value="1">16</MenuItem>
-                                <MenuItem value="2">17</MenuItem>
-                                <MenuItem value="3">18</MenuItem>
-                                <MenuItem value="4">19</MenuItem>
-                                <MenuItem value="5">20</MenuItem>
-                                <MenuItem value="1">21</MenuItem>
-                                <MenuItem value="2">22</MenuItem>
-                                <MenuItem value="3">23</MenuItem>
-                                <MenuItem value="4">24</MenuItem>
+                                <MenuItem value="6">6</MenuItem>
+                                <MenuItem value="7">7</MenuItem>
+                                <MenuItem value="8">8</MenuItem>
+                                <MenuItem value="9">9</MenuItem>
+                                <MenuItem value="10">10</MenuItem>
+                                <MenuItem value="11">11</MenuItem>
+                                <MenuItem value="12">12</MenuItem>
+                                <MenuItem value="13">13</MenuItem>
+                                <MenuItem value="14">14</MenuItem>
+                                <MenuItem value="15">15</MenuItem>
+                                <MenuItem value="16">16</MenuItem>
+                                <MenuItem value="17">17</MenuItem>
+                                <MenuItem value="18">18</MenuItem>
+                                <MenuItem value="19">19</MenuItem>
+                                <MenuItem value="20">20</MenuItem>
+                                <MenuItem value="21">21</MenuItem>
+                                <MenuItem value="22">22</MenuItem>
+                                <MenuItem value="23">23</MenuItem>
+                                <MenuItem value="24">24</MenuItem>
                             </Select>
                             <Select
                                 variant="outlined"

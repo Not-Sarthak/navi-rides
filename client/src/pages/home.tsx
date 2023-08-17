@@ -167,7 +167,7 @@ const Home = () => {
                 />
                 </Box>
                 <br />
-                <Typography fontSize="18px" fontWeight={600} color="#11142d" style={{display: "flex"}}>
+                <Typography fontSize="18px" fontWeight={600} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
                     Latest Rides
                 </Typography>
 
@@ -175,7 +175,7 @@ const Home = () => {
                     mt={2.5}
                     sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}
                 >
-                    {latestProperties.map((property) => (
+                    {latestProperties.reverse().map((property) => (
                         <Dummy
                         key={property._id}
                         id={property._id}

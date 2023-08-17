@@ -65,7 +65,7 @@ const AllProperties = () => {
         <Box>
             <Box mt="4rem" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
                 <Stack direction="column" width="100%">
-                    <Typography fontSize={25} fontWeight={700} color="#11142d">
+                    <Typography fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
                         {!allProperties.length
                             ? "There are no Cars"
                             : "All Available Rides"}
@@ -225,7 +225,7 @@ const AllProperties = () => {
             </Stack>
 
             <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
-                {allProperties?.map((property) => (
+                {allProperties?.reverse().map((property) => (
                     <Dummy
                         key={property._id}
                         id={property._id}
