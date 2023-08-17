@@ -23,8 +23,7 @@ import { useTable } from "@refinedev/core";
 
 import React from "react";
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { notificationProvider } from "@refinedev/mui";
 
 import {
     PieChart,
@@ -35,10 +34,34 @@ import {
 
 import { useMemo } from "react";
 
+import Snackbar from '@mui/material/Snackbar';
+import Button from '@mui/material/Button';
+import MuiAlert, { AlertProps } from '@mui/material/Alert';
+
+const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+    props,
+    ref,
+  ) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+  });
+
 export const Login: React.FC = () => {
 
     const [ref, { height }] = useMeasure();
 
+    const [open, setOpen] = React.useState(false);
+
+    const handleClick = () => {
+      setOpen(true);
+    };
+    const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOpen(false);
+      };
+    window.onload = handleClick
     const navigate = useNavigate();
 
     const {
@@ -127,14 +150,19 @@ export const Login: React.FC = () => {
         };
     }, [filters]);
 
-    const notify = () => alert("Please Log in to Continue");
-    window.onload = notify;
+
+
     return (
     <Box sx={{width: "100%"}}>
         <Box mt={1}>
             <Navbar />
             <Hero />
         </Box>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          Please Log In to Continue!
+        </Alert>
+      </Snackbar>
         <Box  component="div">
             <Box style={{display: "flex", flexDirection: "column", flexWrap: "wrap", justifyContent: "center", alignContent: "center"}}>
             <Box sx={{display: "flex", justifyContent: "center"}}>

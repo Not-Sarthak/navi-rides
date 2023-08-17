@@ -2,8 +2,8 @@ import React from 'react'
 import './hero.css'
 import {car} from '../../assets'
 
-
 const Hero = () => {
+
   return (
     <main>
     <div className="container" style={{marginTop: "0rem"}}>

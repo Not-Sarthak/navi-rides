@@ -178,7 +178,7 @@ const PropertyDetails = () => {
                                 </Stack>
                             </Box>
 
-                            {/* <Box sx={{display: "flex", justifyContent: "center", alignContent: "center", border: "1px solid #e4e4e4", padding: "2px", borderRadius: "13px"}}> */}
+                            <Box sx={{display: "flex", justifyContent: "center", alignContent: "center", border: "1px solid #e4e4e4", padding: "2px", borderRadius: "13px"}}>
                                 {/* <Typography
                                     fontSize={16}
                                     fontWeight={400}
@@ -201,7 +201,7 @@ const PropertyDetails = () => {
                                         {propertyDetails.currency}{propertyDetails.price}
                                     </Typography>
                                 </Stack> */}
-                            {/* </Box> */}
+                            </Box>
                         </Stack>
 
                         <Stack mt="15px" direction="column" gap="10px">
@@ -245,7 +245,7 @@ const PropertyDetails = () => {
                     display="flex"
                     flexDirection="column"
                     gap="20px"
-                    sx={{boxShadow: "-1px 15px 30px -12px #a8a8a8"}}
+                    // sx={{boxShadow: "-1px 15px 30px -12px #a8a8a8"}}
                 >
                     <Stack
                         width="100%"
@@ -382,15 +382,6 @@ const PropertyDetails = () => {
                             style={{ borderRadius: 10, objectFit: "cover" }}
                         />
                     </Stack> */}
-
-                    {/* <Box>
-                        <CustomButton
-                            title="Book Now"
-                            backgroundColor="#00bef5"
-                            color="#FCFCFC"
-                            fullWidth
-                        />
-                    </Box> */}
                 </Box>
             </Box>
         </Box>
