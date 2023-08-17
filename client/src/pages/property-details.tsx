@@ -9,6 +9,8 @@ import Edit from "@mui/icons-material/Edit";
 import Phone from "@mui/icons-material/Phone";
 import Place from "@mui/icons-material/Place";
 import Star from "@mui/icons-material/Star";
+import CallIcon from '@mui/icons-material/Call';
+import { whatsapp } from 'assets';
 
 import {
     FacebookShareButton,
@@ -77,6 +79,14 @@ const PropertyDetails = () => {
             );
         }
     };
+    const url = `tel:${propertyDetails.number}`;
+    const handleClick = () => {
+      window.open(url);
+    }
+    const url_w = `https://wa.me/${propertyDetails.number}?text=Hi`;
+    const handleClick_w = () => {
+      window.open(url_w);
+    }
     return (
         <Box
             borderRadius="15px"
@@ -318,6 +328,10 @@ const PropertyDetails = () => {
                                 {propertyDetails.creator.allProperties.length}{" "}
                                 Cars
                             </Typography> */}
+                            <div>
+                                <button onClick={handleClick} style={{background: "none", cursor: "pointer", color: "#40c451", border: "none", marginRight: "1rem"}}><CallIcon style={{fontSize:"26px"}}/></button>
+                                <button onClick={handleClick_w} style={{ background: "none", cursor: "pointer", color: "inherit", border: "none"}}><img src={whatsapp} style={{width: "30px"}}/></button>
+                            </div>
                         </Stack>
 
                         <Stack
