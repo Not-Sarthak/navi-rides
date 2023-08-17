@@ -62,6 +62,7 @@ export const Login: React.FC = () => {
         setOpen(false);
       };
     window.onload = handleClick
+    
     const navigate = useNavigate();
 
     const {
@@ -165,7 +166,10 @@ export const Login: React.FC = () => {
       </Snackbar>
         <Box  component="div">
             <Box style={{display: "flex", flexDirection: "column", flexWrap: "wrap", justifyContent: "center", alignContent: "center"}}>
-            <Box sx={{display: "flex", justifyContent: "center"}}>
+            <Box sx={{display: "flex", justifyContent: "center", border: "1px solid #a8a8a8", padding: "4px", marginBottom: "6px", borderRadius: "20px", backgroundColor: "#586ae9", color: "white"}}>
+                Please Log In to Continue!
+            </Box>
+            <Box sx={{display: "flex", justifyContent: "center",}}>
                 <GoogleButton />
             </Box>
                 <TextField

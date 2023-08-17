@@ -66,9 +66,7 @@ const AllProperties = () => {
             <Box mt="4rem" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
                 <Stack direction="column" width="100%">
                     <Typography fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
-                        {!allProperties.length
-                            ? "There are no Cars"
-                            : "All Available Rides"}
+                        All Available Rides
                     </Typography>
                     {/* <Box
                         mb={2}
@@ -158,6 +156,7 @@ const AllProperties = () => {
                                     ]);
                                 }}
                             />
+                            
                             {/* <Select
                                 variant="outlined"
                                 color="info"
@@ -223,7 +222,11 @@ const AllProperties = () => {
                     color="#fcfcfc"
                 />
             </Stack>
-
+            <Typography fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
+                        {!allProperties.length
+                            ? "There are no Cars"
+                            : ""}
+                    </Typography>
             <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
                 {allProperties?.reverse().map((property) => (
                     <Dummy
