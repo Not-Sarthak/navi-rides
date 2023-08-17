@@ -231,8 +231,13 @@ export const Login: React.FC = () => {
                 />
             </Box>
         </Box>
-        <Typography fontSize="24px" fontWeight={600} color="#11142d" style={{display: "flex", justifyContent: "center", alignContent: "center"}}>
+        {/* <Typography fontSize="24px" fontWeight={600} color="#11142d" style={{display: "flex", justifyContent: "center", alignContent: "center"}}>
             Latest Rides
+        </Typography> */}
+        <Typography fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
+            {!latestProperties.length
+            ? "There are no Rides"
+            : "Latest Rides"}
         </Typography>
                 <Box
                  mt={2.5}
