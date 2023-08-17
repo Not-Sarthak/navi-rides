@@ -58,7 +58,7 @@ const PropertyDetails = () => {
     const isCurrentUser = user.email === propertyDetails.creator.email;
 
     const nope = `/properties/show/${id}`
-    const c = window.location.origin + `/properties/show/${id}`
+    const c = window.location.origin + `/properties/show/${id}?noLogin=true`
 
     const handleDeleteProperty = () => {
         // eslint-disable-next-line no-restricted-globals

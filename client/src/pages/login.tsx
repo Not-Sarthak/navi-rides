@@ -131,12 +131,15 @@ export const Login: React.FC = () => {
         </Box>
         <Box  component="div">
             <Box style={{display: "flex", flexDirection: "column", flexWrap: "wrap", justifyContent: "center", alignContent: "center"}}>
+            <Box sx={{display: "flex", justifyContent: "center"}}>
+                <GoogleButton />
+            </Box>
                 <TextField
                     className="glass" 
                     variant="outlined"
                     color="info"
                     placeholder="Pickup Location"
-                    sx={{ width: "300px", border: "1px solid #a8a8a8", borderRadius: "6px", marginBottom: "1rem", marginTop: "0rem" }}
+                    sx={{ width: "300px", border: "1px solid #a8a8a8", borderRadius: "6px", marginBottom: "1rem", marginTop: "1rem" }}
                     value={currentFilterValues.location}
                     onChange={(e) => {
                         setFilters([
@@ -190,7 +193,6 @@ export const Login: React.FC = () => {
                 />
             </Box>
         </Box>
-        
         <Typography fontSize="24px" fontWeight={600} color="#11142d" style={{display: "flex", justifyContent: "center", alignContent: "center"}}>
             Latest Rides
         </Typography>
