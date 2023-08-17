@@ -126,7 +126,7 @@ const PropertyDetails = () => {
                                     // mt="5px"
                                     color="#11142D"
                                 >
-                                    Price: {propertyDetails.currency}{propertyDetails.price}
+                                    {propertyDetails.currency}{propertyDetails.price}
                                 </Typography>
                                 </Box>
                             {/* <Box>
