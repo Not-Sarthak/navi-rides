@@ -21,6 +21,11 @@ import Hero from "../components/common/Hero";
 import { useNavigate } from "react-router-dom";
 import { useTable } from "@refinedev/core";
 
+import React from "react";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import {
     PieChart,
     PropertyReferrals,
@@ -60,7 +65,6 @@ export const Login: React.FC = () => {
     // });
 
     const latestProperties = data?.data ?? [];
-
 
     const { mutate: login } = useLogin<CredentialResponse>({
         v3LegacyAuthProviderCompatible: true,
@@ -123,6 +127,8 @@ export const Login: React.FC = () => {
         };
     }, [filters]);
 
+    const notify = () => alert("Please Log in to Continue");
+    window.onload = notify;
     return (
     <Box sx={{width: "100%"}}>
         <Box mt={1}>
@@ -196,10 +202,10 @@ export const Login: React.FC = () => {
         <Typography fontSize="24px" fontWeight={600} color="#11142d" style={{display: "flex", justifyContent: "center", alignContent: "center"}}>
             Latest Rides
         </Typography>
-              <Box
+                <Box
                  mt={2.5}
                  sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}
-             >
+                >
                  {latestProperties.map((property) => (
                      <Dummy
                          key={property._id}
@@ -217,7 +223,7 @@ export const Login: React.FC = () => {
                          photo={property.photo}
                      />
                  ))}
-             </Box>
+                </Box>
     </Box>
     );
 };
