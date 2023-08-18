@@ -162,6 +162,7 @@ const Form = ({
                                 <MenuItem value="crossover">Crossover</MenuItem>
                                 <MenuItem value="muv">MUV</MenuItem>
                                 <MenuItem value="xuv">XUV</MenuItem>
+                                <MenuItem value="luxury">Luxury</MenuItem>
                             </Select>
                         </FormControl>
 
@@ -192,7 +193,6 @@ const Form = ({
                                 <MenuItem value="US$">USD</MenuItem>
                                 <MenuItem value="AU$">AUD</MenuItem>
                                 <MenuItem value="CA$">CAD</MenuItem>
-                                <MenuItem value="₹">INR</MenuItem>
                                 <MenuItem value="£">GBP</MenuItem>
                             </Select>
                             <FormHelperText
