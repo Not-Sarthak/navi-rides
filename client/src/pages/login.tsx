@@ -235,7 +235,7 @@ export const Login: React.FC = () => {
                 <Box sx={{display: "flex", justifyContent: "center"}}>
                 <CustomButton
                     title="Search"
-                    handleClick={() => navigate("/properties/create")}
+                    // handleClick={() => navigate("/properties/create")}
                     backgroundColor="#586ae9"
                     color="#fcfcfc"
                     icon={<SearchIcon />}
