@@ -8,6 +8,7 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
 import { useMemo } from "react";
+import SearchIcon from '@mui/icons-material/Search';
 
 import { PropertyCard, CustomButton } from "components";
 
@@ -156,7 +157,16 @@ const AllProperties = () => {
                                     ]);
                                 }}
                             />
-                            
+                            <Box sx={{display: "flex", justifyContent: "center"}}>
+                            <CustomButton
+                                title="Search"
+                                handleClick={() => navigate("/properties/create")}
+                                backgroundColor="#586ae9"
+                                color="#fcfcfc"
+                                icon={<SearchIcon />}
+                            />
+                            </Box>
+                                        
                             {/* <Select
                                 variant="outlined"
                                 color="info"

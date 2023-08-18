@@ -16,7 +16,7 @@ import { CredentialResponse } from "../../interfaces/google";
 import Link from '@mui/material/Link';
 
 
-const pages = ["Home", "Drivers", "About", "Contact Us"];
+const pages = ["Home", "Add Ride", "About", "Contact Us"];
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -74,7 +74,7 @@ const DrawerComp = () => {
               </ListItemIcon>
             </ListItemButton>
           ))}
-          <GoogleButton />
+          {/* <GoogleButton /> */}
         </List>
       </Drawer>
       <IconButton

@@ -17,6 +17,7 @@ import { useTable } from "@refinedev/core";
 import Dummy from "components/common/Dummy";
 import Add from "@mui/icons-material/Add";
 import { useNavigate } from "react-router-dom";
+import SearchIcon from '@mui/icons-material/Search';
 
 import useMeasure from "react-use-measure";
 import { MainBG } from "../assets";
@@ -165,6 +166,15 @@ const Home = () => {
                         ]);
                     }}
                 />
+                <Box sx={{display: "flex", justifyContent: "center"}}>
+                <CustomButton
+                    title="Search"
+                    handleClick={() => navigate("/properties/create")}
+                    backgroundColor="#586ae9"
+                    color="#fcfcfc"
+                    icon={<SearchIcon />}
+                />
+                </Box>
                 </Box>
                 <br />
                 {/* <Typography fontSize="18px" fontWeight={600} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>

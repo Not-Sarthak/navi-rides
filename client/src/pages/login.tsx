@@ -12,6 +12,9 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 
+import SearchIcon from '@mui/icons-material/Search';
+import { CustomButton } from "components";
+
 import { CredentialResponse } from "../interfaces/google";
 
 import Dummy from "../components/common/Dummy";
@@ -229,12 +232,21 @@ export const Login: React.FC = () => {
                         ]);
                     }}
                 />
+                <Box sx={{display: "flex", justifyContent: "center"}}>
+                <CustomButton
+                    title="Search"
+                    handleClick={() => navigate("/properties/create")}
+                    backgroundColor="#586ae9"
+                    color="#fcfcfc"
+                    icon={<SearchIcon />}
+                />
+                </Box>
             </Box>
         </Box>
         {/* <Typography fontSize="24px" fontWeight={600} color="#11142d" style={{display: "flex", justifyContent: "center", alignContent: "center"}}>
             Latest Rides
         </Typography> */}
-        <Typography fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
+        <Typography marginTop= {6} fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
             {!latestProperties.length
             ? "There are no Rides"
             : "Latest Rides"}
