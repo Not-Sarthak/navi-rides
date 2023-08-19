@@ -255,23 +255,23 @@ export const Login: React.FC = () => {
                  mt={2.5}
                  sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}
                 >
-                 {latestProperties.map((property) => (
-                     <Dummy
-                         key={property._id}
-                         id={property._id}
-                         time={property.time}
-                         min={property.min}
-                         name={property.name}
-                         number={property.number}
-                         title={property.title}
-                         date={property.date}
-                         location={property.location}
-                         dropLocation={property.dropLocation}
-                         currency={property.currency}
-                         price={property.price}
-                         photo={property.photo}
-                     />
-                 ))}
+                 {latestProperties?.reverse().map((property) => (
+                    <Dummy
+                        key={property._id}
+                        id={property._id}
+                        title={property.title}
+                        name={property.name}
+                        time={property.time}
+                        min={property.min}
+                        number={property.number}
+                        date={property.date}
+                        location={property.location}
+                        dropLocation={property.dropLocation}
+                        currency={property.currency}
+                        price={property.price}
+                        photo={property.photo}
+                    />
+                ))}
                 </Box>
     </Box>
     );

@@ -189,8 +189,8 @@ const Home = () => {
                     mt={2.5}
                     sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}
                 >
-                    {latestProperties.reverse().map((property) => (
-                        <Dummy
+                    {latestProperties?.reverse().map((property) => (
+                    <Dummy
                         key={property._id}
                         id={property._id}
                         title={property.title}
@@ -205,7 +205,7 @@ const Home = () => {
                         price={property.price}
                         photo={property.photo}
                     />
-                    ))}
+                ))}
                 </Box>
             </Box>
         </Box>
