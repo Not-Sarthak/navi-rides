@@ -301,15 +301,15 @@ const Form = ({
                                     required: true,
                                 })}
                             >
-                                <MenuItem value="1">1</MenuItem>
-                                <MenuItem value="2">2</MenuItem>
-                                <MenuItem value="3">3</MenuItem>
-                                <MenuItem value="4">4</MenuItem>
-                                <MenuItem value="5">5</MenuItem>
-                                <MenuItem value="6">6</MenuItem>
-                                <MenuItem value="7">7</MenuItem>
-                                <MenuItem value="8">8</MenuItem>
-                                <MenuItem value="9">9</MenuItem>
+                                <MenuItem value="01">01</MenuItem>
+                                <MenuItem value="02">02</MenuItem>
+                                <MenuItem value="03">03</MenuItem>
+                                <MenuItem value="04">04</MenuItem>
+                                <MenuItem value="05">05</MenuItem>
+                                <MenuItem value="06">06</MenuItem>
+                                <MenuItem value="07">07</MenuItem>
+                                <MenuItem value="08">08</MenuItem>
+                                <MenuItem value="09">09</MenuItem>
                                 <MenuItem value="10">10</MenuItem>
                                 <MenuItem value="11">11</MenuItem>
                                 <MenuItem value="12">12</MenuItem>
@@ -339,16 +339,16 @@ const Form = ({
                                     required: true,
                                 })}
                             >
-                                <MenuItem value="0">0</MenuItem>
-                                <MenuItem value="1">1</MenuItem>
-                                <MenuItem value="2">2</MenuItem>
-                                <MenuItem value="3">3</MenuItem>
-                                <MenuItem value="4">4</MenuItem>
-                                <MenuItem value="5">5</MenuItem>
-                                <MenuItem value="6">6</MenuItem>
-                                <MenuItem value="7">7</MenuItem>
-                                <MenuItem value="8">8</MenuItem>
-                                <MenuItem value="9">9</MenuItem>
+                                <MenuItem value="00">00</MenuItem>
+                                <MenuItem value="01">01</MenuItem>
+                                <MenuItem value="02">02</MenuItem>
+                                <MenuItem value="03">03</MenuItem>
+                                <MenuItem value="04">04</MenuItem>
+                                <MenuItem value="05">05</MenuItem>
+                                <MenuItem value="06">06</MenuItem>
+                                <MenuItem value="07">07</MenuItem>
+                                <MenuItem value="08">08</MenuItem>
+                                <MenuItem value="09">09</MenuItem>
                                 <MenuItem value="10">10</MenuItem>
                                 <MenuItem value="11">11</MenuItem>
                                 <MenuItem value="12">12</MenuItem>

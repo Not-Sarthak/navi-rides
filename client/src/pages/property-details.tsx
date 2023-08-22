@@ -205,6 +205,17 @@ const PropertyDetails = () => {
                         </Stack>
 
                         <Stack mt="15px" direction="column" gap="10px">
+                        <Typography  
+                                fontSize={16}
+                                fontWeight={600}
+                                // mt="5px"
+                                color="#11142D"
+                                textTransform="capitalize">
+                                Contact No.
+                            </Typography>
+                            <Typography fontSize={14} color="#808191">
+                                {propertyDetails.number}
+                            </Typography>
                             <Typography  
                                 fontSize={16}
                                 fontWeight={600}
