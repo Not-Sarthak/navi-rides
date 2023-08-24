@@ -10,7 +10,7 @@ const Hero = () => {
       <img src={car} alt="" style={{height:"80%", width: "88%"}}/>
       <div className="hero-text">
         <div className = "ex">Find Your affordable and Shared rides.</div>
-        <p>
+        <p style={{color: "gray"}}>
           Canada | United Kingdom | Australia
         </p>
         </div>
