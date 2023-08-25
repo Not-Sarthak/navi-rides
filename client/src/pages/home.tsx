@@ -97,7 +97,7 @@ const Home = () => {
             <Box mt={-12}>
                 <Hero />
             </Box>
-            {/* <Box
+            <Box
                 // flex={1}
                 borderRadius="15px"
                 // padding="20px"
@@ -106,11 +106,11 @@ const Home = () => {
                 flexDirection="column"
                 minWidth="100%"
                 mt="25px"
-            > */}
+            >
                 {/* <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", zIndex: "3", top: 0, left: 0, right: 0 }}>
                     <img src={MainBG} style={{ width: "50%", height: "50%", borderRadius: "10px" }} />
                 </Box> */}
-                {/* <Box style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
+                <Box style={{display: "flex", flexWrap: "wrap", justifyContent: "space-around"}}>
                 <TextField
                     className="glass"
                     variant="outlined"
@@ -177,11 +177,11 @@ const Home = () => {
                 />
                 </Box>
                 </Box>
-                <br /> */}
+                <br />
                 {/* <Typography fontSize="18px" fontWeight={600} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
                     Latest Rides
                 </Typography> */}
-                {/* <Typography fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
+                <Typography fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
                         {!allProperties.length
                             ? "There are no Rides"
                             : "Latest Rides"}
@@ -190,8 +190,8 @@ const Home = () => {
                 <Box
                     mt={2.5}
                     sx={{ display: "flex", flexWrap: "wrap", gap: 4 }}
-                > */}
-                {/* {allProperties?.reverse().map((property) => (
+                >
+                {allProperties?.reverse().map((property) => (
                     <Dummy
                         key={property._id}
                         id={property._id}
@@ -256,7 +256,7 @@ const Home = () => {
                         ))}
                     </Select>
                 </Box>
-            )} */}
+            )}
         </Box>
     );
 };

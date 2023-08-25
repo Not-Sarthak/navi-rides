@@ -157,7 +157,7 @@ export const Login: React.FC = () => {
 
 
     return (
-    <Box sx={{width: "100%"}}>
+    <Box sx={{width: "100%", mb: "2rem"}}>
         <Box mt={1}>
             <Navbar />
             <Hero />
@@ -175,7 +175,7 @@ export const Login: React.FC = () => {
             <Box sx={{display: "flex", justifyContent: "center",}}>
                 <GoogleButton />
             </Box>
-                <TextField
+                {/* <TextField
                     className="glass" 
                     variant="outlined"
                     color="info"
@@ -240,13 +240,13 @@ export const Login: React.FC = () => {
                     color="#fcfcfc"
                     icon={<SearchIcon />}
                 />
-                </Box>
+                </Box> */}
             </Box>
         </Box>
         {/* <Typography fontSize="24px" fontWeight={600} color="#11142d" style={{display: "flex", justifyContent: "center", alignContent: "center"}}>
             Latest Rides
         </Typography> */}
-        <Typography marginTop= {6} fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
+        {/* <Typography marginTop= {6} fontSize={25} fontWeight={700} color="#11142d" sx={{display: "flex", justifyContent: "center", alignContent: "center"}}>
             {!latestProperties.length
             ? "There are no Rides"
             : "Latest Rides"}
@@ -272,7 +272,7 @@ export const Login: React.FC = () => {
                         photo={property.photo}
                     />
                 ))}
-                </Box>
+                </Box> */}
     </Box>
     );
 };
