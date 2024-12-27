@@ -6,3 +6,4 @@ Navi-Rides is a great way to save money and reduce your environmental impact. It
 # Tech-Stack
 Front-end : Typescript, React, MaterialUI <br/>
 Back-end: NodeJS, ExpressJS, MongoDB, Cloudinary, Refine, Google Auth
+ 
