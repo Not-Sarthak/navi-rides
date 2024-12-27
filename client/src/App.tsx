@@ -14,10 +14,6 @@ import {
 import CssBaseline from "@mui/material/CssBaseline";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import AccountCircleOutlined from "@mui/icons-material/AccountCircleOutlined";
-import ChatBubbleOutline from "@mui/icons-material/ChatBubbleOutline";
-import PeopleAltOutlined from "@mui/icons-material/PeopleAltOutlined";
-import StarOutlineRounded from "@mui/icons-material/StarOutlineRounded";
-import VillaOutlined from "@mui/icons-material/VillaOutlined";
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import InfoIcon from '@mui/icons-material/Info';
 import FeedIcon from '@mui/icons-material/Feed';
@@ -27,7 +23,6 @@ import dataProvider from "@refinedev/simple-rest";
 import routerProvider from "@refinedev/react-router-v6/legacy";
 import axios, { AxiosRequestConfig } from "axios";
 import { Title, Sider, Layout, Header } from "components/layout";
-import { ColorModeContextProvider } from "contexts";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
@@ -47,9 +42,7 @@ import {
     Terms,
     New
 } from "pages";
-import HomeIcon from '@mui/icons-material/Home';
 import Privacy from "pages/privacy";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -72,7 +65,7 @@ function App() {
 
             if (profileObj) {
                 const response = await fetch(
-                    "https://navirides72.onrender.com/api/v1/users",
+                    "http://localhost:8080/api/v1/users",
                     {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
@@ -137,17 +130,11 @@ function App() {
     };
     return (
         <div>
-            {/* <BrowserRouter>
-            <Routes>
-                <Route path="/new" element={<New />} />
-            </Routes>
-            </BrowserRouter> */}
-            {/* <GitHubBanner /> */}
             <CssBaseline />
             <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
             <RefineSnackbarProvider>
                 <Refine
-                    dataProvider={dataProvider("https://navirides72.onrender.com/api/v1")}
+                    dataProvider={dataProvider("http://localhost:8080/api/v1")}
                     notificationProvider={notificationProvider}
                     ReadyPage={ReadyPage}
                     catchAll={<ErrorComponent />}

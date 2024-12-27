@@ -16,7 +16,7 @@ export const ColorModeContext = createContext<ColorModeContextType>(
     {} as ColorModeContextType,
 );
 
-export const ColorModeContextProvider: React.FC<PropsWithChildren> = ({
+export const ColorModeContextProvider: React.FC<any> = ({
     children,
 }) => {
     const colorModeFromLocalStorage = localStorage.getItem("colorMode");

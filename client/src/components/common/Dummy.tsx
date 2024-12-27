@@ -1,31 +1,12 @@
-import React from 'react'
 import "./Dummy.css"
 
 import { PropertyCardProps } from "interfaces/property";
-import Place from "@mui/icons-material/Place";
 import { Link } from "react-router-dom";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import Stack from "@mui/material/Stack";
 import CallIcon from '@mui/icons-material/Call';
-
 import ReactWhatsapp from './ReactWhatsapp';
-import Call from './Call';
-
-import { AgentCardProp, InfoBarProps } from "interfaces/agent";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { whatsapp } from 'assets';
-import { minTime } from 'date-fns/fp';
-
-function checkImage(url: any) {
-  const img = new Image();
-  img.src = url;
-  return img.width !== 0 && img.height !== 0;
-}
-
     
 const Dummy = ({
   id,

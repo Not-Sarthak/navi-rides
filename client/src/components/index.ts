@@ -1,17 +1,17 @@
-// common
+// Common
 import Profile from "./common/Profile";
 import PropertyCard from "./common/PropertyCard";
 import CustomButton from "./common/CustomButton";
 
-// charts
+// Charts
 import PieChart from "./charts/PieChart";
 import PropertyReferrals from "./charts/PropertyReferrals";
 import TotalRevenue from "./charts/TotalRevenue";
 
-// agent
+// Agent
 import AgentCard from "./agent/AgentCard";
 
-// home
+// Home
 import TopAgent from "./home/TopAgent";
 
 export {
